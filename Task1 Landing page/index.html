@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device, initial">
+        <!---========Favicon=========-->
+        <link rel="shortcut icon" href="assets/img/handbag.png" type="image/x-icon">
+        <!-- <a href="https://www.flaticon.com/free-icons/bag" title="bag icons">Bag icon - Flaticon</a> -->
+
+        <!---RemixIcons-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+
+        <!--=======SwiperCss======-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        
+
+        <!--===========CSS============-->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Responsive Handbag Ecommerce</title>
+    </head>
+
+ <body>
+    <!--================ HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                Shop.
+            </a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="ri-home-line"></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>New</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#collection" class="nav__link">
+                            <i class="ri-compass-line"></i>
+                            <span>Collection</span>
+                        </a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#products" class="nav__link">
+                            <i class="ri-handbag-line"></i>
+                            <span>Products</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Change Button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+        </nav>
+    </header>
+
+    <!-- ============== MAIN =================== -->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        New Bag <br>
+                        Collection
+                    </h1>
+
+                    <p class="home__description">
+                        The new collection from <br>
+                        the most luxurious brands this year.
+                    </p>
+
+                    <a href="#new" class="button__link">
+                        Explore <i class="ri-arrow-right-line"></i>
+                    </a>
+                </div>
+
+                <div class="home__images">
+                    <img src="assets/img/home1.jpeg" alt="home image">
+                    <img src="assets/img/home2.jpg" alt="home image">
+
+                </div>
+            </div>
+        </section>
+
+        <!--================= NEW ====================-->
+        <section class="new section" id="new">
+            <h2 class="section__title">
+                New Categories
+            </h2>
+
+            <div class="new__container container grid">
+                <article class="new__card">
+                    <img src="assets/img/neww.jpg" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Small Sling Handbags  
+                            </h2>
+                            <span class="new__subtitle">
+                                Designer Collection
+                            </span>
+                        </div>
+
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="new__card">
+                    <img src="assets/img/new2.jpeg" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Top Handle Handbags 
+                            </h2>
+                            <span class="new__subtitle">
+                                Limited Edition
+                            </span>
+                        </div>
+
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+
+                <article class="new__card">
+                    <img src="assets/img/new3.jpg" alt="new image" class="new__img">
+
+                    <a href="#" class="new__link">
+                        <div class="new__data">
+                            <h2 class="new__title">
+                                Zip Small Handbags
+                            </h2>
+                            <span class="new__subtitle">
+                                Classic Collection
+                            </span>
+                        </div>
+
+                        <i class="ri-arrow-right-line"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+
+        <!--================== COLLECTION ================-->
+        <section class="collection section" id="collection">
+            <div class="collection__container collection">
+                <div class="collection__explore">
+                    <div class="collection__data-bags">
+                        <h2 class="collection__title">
+                            Tote-Bags<br>
+                            Collection
+                        </h2>
+                        <a href="#" class="button__link">
+                            Explore Bags<i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                    <img src="assets/img/versace.jpeg" alt="collection image">
+                </div>
+
+                <div class="collection__explore">
+                    <img src="assets/img/collection2.jpeg" alt="collection image" class="pink-bag">
+
+                    <div class="collection__data-handbags">
+                        <h2 class="collection__title">
+                            Handbag<br>
+                            Collection
+                        </h2>
+                        <a href="#" class="button__link">
+                            Explore Bags<i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    <!--=================== PRODUCTS =================-->
+        <section class="products section" id="products">
+            <h2 class="section__title">
+                Best Products
+            </h2>
+            <div class="products__container container swiper" id="swiper-container">
+                <div class="swiper-wrapper">
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/product4.jpeg" alt="product image" class="products__img" id="burberry-bag">
+
+                        <h2 class="products__title">
+                        Burberry Shoulder Bag
+                        </h2>
+
+                        <span class="products__price">
+                                $10,500
+                        </span>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/product2.jpeg" alt="product image" class="products__img">
+
+                        <h2 class="products__title">
+                        Versace Jeans Couture
+                        </h2>
+
+                        <span class="products__price">
+                                $15,000
+                        </span>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/product3.jpg" alt="product image" class="products__img" id="lv-bag">
+
+                        <h2 class="products__title">
+                        LV Monogram Noe Purse
+                        </h2>
+
+                        <span class="products__price">
+                                $9,500
+                        </span>
+                    </article>
+
+                    <article class="products__card swiper-slide">
+                        <img src="assets/img/product1.jpeg" alt="product image" class="products__img">
+
+                        <h2 class="products__title">
+                        Chanel Pink Lego Brick
+                        </h2>
+
+                        <span class="products__price">
+                                $14,500
+                        </span>
+                    </article>
+              </div>
+
+              <div class="swiper-button-next">
+                <i class="ri-arrow-right-line"></i>
+              </div>
+
+              <div class="swiper-button-prev">
+                <i class="ri-arrow-left-line"></i>
+              </div>
+            </div>
+        </section>
+
+        <!-- ================ BRANDS ================= -->
+        <section class="brand__section">
+            <h2 class="section__title">
+                Brands We Sell
+            </h2>
+
+            <div class="brand__container container grid">
+                <img src="assets/img/logo1.jpg" alt="logo image" class="brand__img">
+                <img src="assets/img/logo2.jpg" alt="logo image" class="brand__img">
+                <img src="assets/img/logo3.jpg" alt="logo image" class="brand__img">
+                <img src="assets/img/logo4.jpg" alt="logo image" class="brand__img">
+            </div>
+        </section>
+    </main>
+
+    <!-- =================== FOOTER =============== -->
+    <footer class="footer section">
+        <div class="footer__container container grid">
+            <div>
+                <a href="#" class="footer__logo">
+                    Shop.
+                </a>
+
+                <p class="footer__description">
+                    Committed to bringing you the <br>
+                    best bags from exquisite<br>
+                    brands.
+                </p>
+            </div>
+
+            <div class="footer__content">
+                <div>
+                    <h3 class="footer__title">
+                        Company
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Category</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Contact info</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Blog
+                    </h3>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Events</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Popular news</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="footer__link">Recent news</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Office
+                    </h3>
+
+                    <p class="footer__information">
+                        Monday - Saturday <br>
+                        8AM - 7PM
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="footer__title">
+                        Contact us
+                    </h3>
+
+                    <ul class="footer__social">
+                        <!-- Social media links -->
+                       <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-facebook-fill"></i>
+                       </a>
+
+                       <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                       </a>
+                       
+                       <a href="" target="_blank" class="footer__social-link">
+                            <i class="ri-twitter-x-line"></i>
+                       </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__info container">
+            <span class="footer__copy">
+                @Lindokuhle Mazibuko. All rights reserved
+            </span>
+
+            <a href="#" class="footer__privacy">
+                Terms & Conditions
+            </a>
+        </div>
+    </footer>
+
+    <!-- ================== SCROLL UP =============== -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+    </a>
+
+
+   <!---------SCROLL REVEAL---------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+
+    <!----------SWIPER JS-------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+
+    <!--------MAIN JS---------->
+    <script src="assets/js/main.js"></script>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
